@@ -10,9 +10,7 @@ end
 
 RSpec.describe Card do 
   
-  def card 
-    Card.new('Ace', 'Spades')
-  end
+  let(:card) { Card.new('Ace', 'Spades') }
 
   it 'has a rank' do
     expect(card.rank).to eq('Ace')
